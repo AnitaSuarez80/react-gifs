@@ -2,15 +2,13 @@ import {useState} from 'react';
 import {AddCategory, GifGrid} from './components';
 
 
-export const GitExpertApp = () => {
+export const GifApp = () => {
 
-  const [ categories, setCategories ] = useState(['One Punch']);
+  const [ categories, setCategories ] = useState(['Bob Esponja']);
 
   const onAddCategory = ( newCategory ) => {
-    //  categories.push(newCategory); //You don't use push 
     if( categories.includes(newCategory)) return
      setCategories([ newCategory, ...categories ]); 
-    //setCategories( cat => [ ...cat, 'Valorant' ]); another way to do it
  
   }
   return (
